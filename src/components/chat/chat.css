@@ -1,5 +1,147 @@
-.chat{
-    flex:2;
-    border-left:1px solid gray;
-    border-right:1px solid gray;
+.chat {
+    flex: 2;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.chat .top {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.chat .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.chat .emoji img{
+    cursor:pointer;
+}
+
+.chat .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chat .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.chat .texts span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.chat .texts p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #a5a5a5;
+}
+
+.chat .icons {
+    display: flex;
+    gap: 20px;
+}
+
+.chat .icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.chat .center{
+    padding:20px;
+    flex:1;
+    overflow-y:scroll;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.chat .center::-webkit-scrollbar {
+    display: none;
+}
+
+.chat .message{
+    max-width:70%;
+    dispaly:flex;
+    gap:20px;
+    &.own{
+        align-self:flex-end;
+    }
+}
+
+.chat .message img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.chat .message .texts{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.chat .message .texts p{
+    padding:20px;
+    background-color:rgba(17,25,40,0.3);
+    border-radius:10px;
+}
+
+.chat .message .texts img{
+    width:100%;
+    height:300px;
+    border-radius:10px;
+}
+
+.chat .bottom {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    gap: 20px;
+    margin-top:auto;
+}
+
+.chat input {
+    background-color: rgba(17, 25, 40, 0.25);
+    border: none;
+    outline: none;
+    color: white;
+    flex: 1;
+    padding:20px;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.chat .send{
+    background-color:#5183fe;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+}
+
+.chat .emoji{
+    position:relative;
+}
+
+.chat .emoji .picker{
+    position:absolute;
+    bottom:50px;
+    left:0;
 }

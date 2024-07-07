@@ -12,9 +12,15 @@ function App() {
 
   return (
     <div className="container">
-      <List/>
+      {
+        isUser ? (
+          <>
+          <List/>
           <Chat/>
           <Detail/>
+          </>
+        ) : <Login/>
+      }
       <Notification/>
     </div>
   );

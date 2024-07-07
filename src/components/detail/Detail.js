@@ -28,13 +28,22 @@ const Detail = () => {
                 <img src='/arrowDown.png' alt=''/>
             </div>
             <div className='photos'>
-                    <div className='photoItem'>
-                        <div className='photoDetail'>
-                            <img src='https://images.nightcafe.studio/jobs/PO9BaVxqMqce5cq3ju0D/PO9BaVxqMqce5cq3ju0D--1--jsjn1.jpg?tr=w-1600,c-at_max' alt=''/>
-                            <span>selfie_2024.png</span>
-                        </div>
+                <div className='photoItem'>
+                    <div className='photoDetail'>
+                        <img src='https://images.nightcafe.studio/jobs/PO9BaVxqMqce5cq3ju0D/PO9BaVxqMqce5cq3ju0D--1--jsjn1.jpg?tr=w-1600,c-at_max' alt=''/>
+                        <span>selfie_2024.png</span>
                     </div>
-                    <img src='/download.png' alt=''/>
+                    <img src='/download.png' alt='' className='icon'/>
+                </div>
+            </div>
+            <div className='photos'>
+                <div className='photoItem'>
+                    <div className='photoDetail'>
+                        <img src='https://images.nightcafe.studio/jobs/PO9BaVxqMqce5cq3ju0D/PO9BaVxqMqce5cq3ju0D--1--jsjn1.jpg?tr=w-1600,c-at_max' alt=''/>
+                        <span>selfie_2024.png</span>
+                    </div>
+                    <img src='/download.png' alt='' className='icon'/>
+                </div>
             </div>
             <div className='photos'>
                     <div className='photoItem'>
@@ -42,8 +51,8 @@ const Detail = () => {
                             <img src='https://images.nightcafe.studio/jobs/PO9BaVxqMqce5cq3ju0D/PO9BaVxqMqce5cq3ju0D--1--jsjn1.jpg?tr=w-1600,c-at_max' alt=''/>
                             <span>selfie_2024.png</span>
                         </div>
+                        <img src='/download.png' alt='' className='icon'/>
                     </div>
-                    <img src='/download.png' alt=''/>
             </div>
             <div className='photos'>
                     <div className='photoItem'>
@@ -51,8 +60,8 @@ const Detail = () => {
                             <img src='https://images.nightcafe.studio/jobs/PO9BaVxqMqce5cq3ju0D/PO9BaVxqMqce5cq3ju0D--1--jsjn1.jpg?tr=w-1600,c-at_max' alt=''/>
                             <span>selfie_2024.png</span>
                         </div>
+                        <img src='/download.png' alt='' className='icon'/>
                     </div>
-                    <img src='/download.png' alt=''/>
             </div>
             <div className='photos'>
                     <div className='photoItem'>
@@ -60,17 +69,8 @@ const Detail = () => {
                             <img src='https://images.nightcafe.studio/jobs/PO9BaVxqMqce5cq3ju0D/PO9BaVxqMqce5cq3ju0D--1--jsjn1.jpg?tr=w-1600,c-at_max' alt=''/>
                             <span>selfie_2024.png</span>
                         </div>
+                        <img src='/download.png' alt='' className='icon'/>
                     </div>
-                    <img src='/download.png' alt=''/>
-            </div>
-            <div className='photos'>
-                    <div className='photoItem'>
-                        <div className='photoDetail'>
-                            <img src='https://images.nightcafe.studio/jobs/PO9BaVxqMqce5cq3ju0D/PO9BaVxqMqce5cq3ju0D--1--jsjn1.jpg?tr=w-1600,c-at_max' alt=''/>
-                            <span>selfie_2024.png</span>
-                        </div>
-                    </div>
-                    <img src='/download.png' alt=''/>
             </div>
         </div>
         <div className='option'>
@@ -80,6 +80,7 @@ const Detail = () => {
             </div>
         </div>
         <button>Block user</button>
+        <button className='logout'>Logout</button>
       </div>
     </div>
   )
